@@ -1,0 +1,728 @@
+/*#9356DC*/
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+.jumbotron {
+  background: #F7F7F7;
+  text-align: center;
+  padding: 3rem 1.3rem;
+}
+
+.ptitle {
+  font-weight: bold;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.psubtitle {
+  margin-bottom: 1rem;
+}
+
+.col {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 100%;
+  box-shadow: 0px 15px 10px -15px gray;
+}
+
+.col-bottom {
+  margin-bottom: 2rem;
+}
+
+.cardimg img {
+  width: 100%;
+  height: 40vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.card-title {
+  font-weight: bold;
+}
+
+.card-body {
+  display: flex;
+  justify-content: space-between;
+}
+
+.n-card-body {
+  height: 1rem;
+}
+
+.list-group-numbered {
+  margin: 1rem 0 1.5rem 0;
+}
+
+.list-menu {
+  box-shadow: 1px 1px 10px 1px gray;
+  margin-bottom: 1rem;
+  border-radius: 25px;
+}
+
+.list-menu:hover .checked {
+  opacity: 1;
+  position: relative;
+  animation: width 1s normal;
+  animation-fill-mode: forwards;
+  z-index: 99999999;
+}
+
+@keyframes width {
+  0% {
+    width: 1rem;
+  }
+  100% {
+    width: 5rem;
+  }
+}
+.list-menu:hover .checked img {
+  animation: rotate 1s normal;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate3d(0, 0, 1, 0deg);
+  }
+  25% {
+    transform: rotate3d(0, 0, 1, 90deg);
+  }
+  50% {
+    transform: rotate3d(0, 0, 1, 180deg);
+  }
+  75% {
+    transform: rotate3d(0, 0, 1, 270deg);
+  }
+  100% {
+    transform: rotate3d(0, 0, 1, 360deg);
+  }
+}
+.menu-name {
+  padding: 1rem 0.5rem;
+  display: flex;
+  width: 20rem;
+}
+
+.list-menu:hover .ms-2 {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.checked {
+  display: flex;
+  width: 5rem;
+  height: 5rem;
+  background: #99E2D0;
+  border: solid 1px #99E2D0;
+  border-radius: 0 25px 25px 0;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+}
+
+.checked img {
+  width: 2rem;
+  height: 2rem;
+}
+
+.fw-bold {
+  margin-bottom: 0.5rem;
+}
+
+.badge {
+  color: black;
+  background: white !important;
+  margin-top: 1.5rem;
+}
+
+.starters {
+  animation: opacity 3s normal;
+}
+
+.main-courses {
+  animation: opacity 6s normal;
+}
+
+.desserts {
+  animation: opacity 9s normal;
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .col {
+    width: 50%;
+    margin-top: 3rem;
+  }
+  .n-col-tablet, .col-bottom {
+    margin-top: 1.5rem;
+  }
+}
+@media (min-width: 991.99px) {
+  .col {
+    width: 33.33%;
+    margin-top: 3rem;
+    max-height: 41.5rem;
+  }
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*Importation des polices*/
+* {
+  font-size: 16px;
+  font-family: "Roboto", sans-serif !important;
+  text-decoration: none !important;
+  list-style-type: none !important;
+}
+
+/*Affectation des polices*/
+h1, h2 {
+  font-family: "Shrikhand", cursive !important;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+.home-header, .restaurant-header {
+  background: white;
+}
+
+.home-header .toplogo {
+  box-shadow: 0px 15px 125px -15px black;
+  margin-bottom: 0.2rem;
+}
+
+.home-header .toplogo img {
+  margin: 0 auto;
+  width: 40%;
+  padding: 1rem;
+}
+
+.restaurant-header .arrow-logo {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+}
+
+.arrow-logo .toplogo img {
+  position: relative;
+  width: 75%;
+  right: 6.5rem;
+}
+
+.location {
+  background: #EAEAEA;
+  padding: 1rem 0 1rem 0;
+  text-align: center;
+}
+
+.city {
+  font-weight: bold;
+}
+
+.city::before {
+  background-image: url("/images/maps-and-flags.png");
+  background-size: 1rem 1rem;
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  margin-right: 1rem;
+  content: "";
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .home-header .toplogo img {
+    margin: 0 auto;
+    width: 32.5%;
+    padding: 1rem;
+  }
+}
+@media (min-width: 991.99px) {
+  .home-header .toplogo img {
+    margin: 0 auto;
+    width: 23.5%;
+    padding: 1rem;
+  }
+}
+footer {
+  background: #353535;
+  padding: 1.5rem;
+}
+
+.abottom {
+  color: white;
+}
+
+.bottomlogo {
+  margin-bottom: 1rem;
+}
+
+.bottomlogo img {
+  filter: invert(100%);
+  width: 25%;
+}
+
+footer li {
+  margin-bottom: 0.5rem;
+}
+
+.fork::before {
+  background-image: url("/images/fork-and-knife-silhouettes.png");
+  background-size: 1rem 1rem;
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  margin-right: 1rem;
+  filter: invert(100%);
+  content: "";
+}
+
+.hands::before {
+  background-image: url("/images/hand-shake.png");
+  background-size: 1rem 1rem;
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  margin-right: 1rem;
+  filter: invert(100%);
+  transform: rotate(-40deg);
+  content: "";
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  footer ul {
+    display: flex;
+  }
+  footer ul li {
+    margin-right: 1.75rem;
+  }
+}
+@media (min-width: 991.99px) {
+  footer ul {
+    display: flex;
+  }
+  footer ul li {
+    margin-right: 3rem;
+  }
+  .bottomlogo img {
+    width: 15%;
+  }
+}
+.btn {
+  background: rgb(147, 86, 220);
+  border-radius: 1rem;
+  color: white;
+  display: block;
+  margin: 0 auto 0 auto;
+  width: -moz-fit-content;
+  width: fit-content;
+  box-shadow: 0px 15px 10px -15px gray;
+}
+
+.btn:hover {
+  opacity: 0.8;
+  background: rgb(147, 86, 220);
+  border-radius: 1rem;
+  color: white;
+  display: block;
+  margin: 0 auto 0 auto;
+  width: -moz-fit-content;
+  width: fit-content;
+  box-shadow: 0px 15px 10px -15px gray;
+  box-shadow: 0px 25px 15px -15px gray;
+}
+
+.container {
+  padding: 0;
+}
+
+.howitworks {
+  padding: 3rem 1rem;
+  background: white;
+}
+
+.list {
+  counter-reset: li;
+  /* Initiate a counter */
+}
+
+.step1, .step2, .step3 {
+  box-shadow: 0px 15px 10px -15px gray;
+  padding: 1.5rem 0.5rem;
+  margin-bottom: 1rem;
+  border-radius: 20px;
+  background: #F7F7F7;
+}
+
+.step1:hover,
+.step2:hover,
+.step3:hover {
+  background: rgba(147, 86, 220, 0.1);
+}
+
+.step1:hover svg,
+.step2:hover svg,
+.step3:hover svg {
+  fill: rgb(147, 86, 220) !important;
+}
+
+.step1 svg,
+.step2 svg,
+.step3 svg {
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-right: 1rem;
+}
+
+.steplink1, .steplink2, .steplink3 {
+  color: black;
+  font-weight: bold;
+}
+
+.step1::before,
+.step2::before,
+.step3::before {
+  content: counter(li);
+  counter-increment: li;
+  position: relative;
+  display: inline-block;
+  padding: 2.5px 0 0 0;
+  left: -20.5px;
+  color: white;
+  text-align: center;
+  border: solid rgb(147, 86, 220);
+  width: 25px !important;
+  height: 25px !important;
+  border-radius: 50%;
+  background: rgb(147, 86, 220);
+}
+
+.restaurants {
+  background: #f7f7f7;
+  padding: 4rem 1rem;
+}
+
+.new {
+  background: #99E2D0;
+  padding: 0.5rem;
+  color: #008766;
+  font-weight: bold;
+  width: 5rem;
+  height: 2rem;
+  z-index: 999;
+  position: relative;
+  top: 15%;
+  right: 5%;
+}
+
+.heart svg {
+  width: 1rem;
+  height: 1rem;
+  fill: #FFFFFF;
+}
+
+.heart path {
+  stroke: #000000;
+  stroke-width: 0.5px;
+  stroke-dasharray: 0;
+  stroke-linejoin: round;
+}
+
+.heart:hover path {
+  cursor: pointer;
+  animation: fill 0.125s ease;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fill {
+  0% {
+    fill: white;
+  }
+  25% {
+    fill: url("#myGradient25");
+  }
+  50% {
+    fill: url("#myGradient");
+  }
+  75% {
+    fill: url("#myGradient75");
+  }
+  100% {
+    fill: rgb(147, 86, 220);
+  }
+}
+.loadcontainer {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: hideAnimation 0s ease-in 5s;
+  animation-fill-mode: forwards;
+  position: relative;
+  z-index: 99999;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1000000;
+}
+
+.loader {
+  margin: auto;
+  border: 20px solid #ffffff;
+  border-radius: 50%;
+  border-top: 20px solid rgb(147, 86, 220);
+  width: 200px;
+  height: 200px;
+  animation: spinner 0.5s linear infinite;
+  animation-fill-mode: forwards;
+  position: fixed;
+  z-index: 999999;
+}
+
+@keyframes hideAnimation {
+  to {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+  }
+}
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.container {
+  animation: opacity 2s linear normal;
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.restaurant {
+  padding: 2rem 1rem 0rem 1rem;
+  border-radius: 50px 50px 0 0;
+  background: white;
+  position: relative;
+  bottom: 3.5rem;
+  z-index: 2;
+}
+
+.menu-head {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bg-la-palette-du-gout {
+  background: url(/images/01_la_palette_du_gout.jpg);
+}
+
+.bg-la-note-enchantee {
+  background: url(/images/02_la_note_enchantee.jpg);
+}
+
+.bg-a-la-francaise {
+  background: url(/images/03_a_la_francaise.jpg);
+}
+
+.bg-le-delice-des-sens {
+  background: url(/images/04_le_delice_des_sens.jpg);
+}
+
+.bg-la-palette-du-gout,
+.bg-la-note-enchantee,
+.bg-a-la-francaise,
+.bg-le-delice-des-sens {
+  width: 100%;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+  height: 18rem;
+}
+
+.menu-head {
+  margin-bottom: 2.5rem;
+}
+
+.menu {
+  -webkit-text-decoration: underline #99E2D0 0.2rem !important;
+          text-decoration: underline #99E2D0 0.2rem !important;
+  text-underline-offset: 0.4rem;
+  text-transform: uppercase;
+}
+
+.ml-1 {
+  margin-left: 3rem;
+}

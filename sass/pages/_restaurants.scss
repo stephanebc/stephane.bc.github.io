@@ -1,0 +1,55 @@
+.restaurant {
+    padding: 2rem 1rem 0rem 1rem;
+    border-radius: 50px 50px 0 0;
+    background: white;
+    position: relative;
+    bottom: 3.5rem;
+    z-index: 2;
+}
+
+.menu-head {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bg-la-palette-du-gout {
+    background: url(/images/01_la_palette_du_gout.jpg);
+}
+
+.bg-la-note-enchantee {
+    background: url(/images/02_la_note_enchantee.jpg);
+}
+
+.bg-a-la-francaise {
+    background: url(/images/03_a_la_francaise.jpg);
+}
+
+.bg-le-delice-des-sens {
+    background: url(/images/04_le_delice_des_sens.jpg);
+}
+
+.bg-la-palette-du-gout,
+.bg-la-note-enchantee,
+.bg-a-la-francaise,
+.bg-le-delice-des-sens {
+    @include background-image;
+}
+
+.menu-head {
+    margin-bottom: 2.5rem;
+}
+
+.menu {
+    text-decoration: underline $tertiary 0.2rem !important;
+    text-underline-offset: 0.4rem;
+    text-transform: uppercase;
+}
+
+.ml-1 {
+    margin-left: 3rem;
+}
+
+
+
+
+

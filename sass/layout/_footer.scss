@@ -1,0 +1,68 @@
+footer {
+    background: #353535;
+    padding: 1.5rem;
+}
+
+.abottom {
+    color: white;
+}
+
+.bottomlogo {
+    margin-bottom: 1rem;
+}
+
+.bottomlogo img {
+    filter: invert(100%);
+    width: 25%;
+}
+
+footer li {
+    margin-bottom: 0.5rem;
+}
+
+.fork::before {
+        background-image: url('/images/fork-and-knife-silhouettes.png');
+        background-size: 1rem 1rem;
+        display: inline-block;
+        width: 1rem;
+        height: 1rem;
+        margin-right: 1rem;
+        filter: invert(100%);
+        content: "";
+}
+
+.hands::before {
+        background-image: url('/images/hand-shake.png');
+        background-size: 1rem 1rem;
+        display: inline-block;
+        width: 1rem;
+        height: 1rem;
+        margin-right: 1rem;
+        filter: invert(100%);
+        transform: rotate(-40deg);
+        content: "";
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    footer ul {
+            display: flex;
+        }
+    
+        footer ul li {
+            margin-right: 1.75rem;
+        }
+    }
+
+@media (min-width: 991.99px) {
+    footer ul {
+        display: flex;
+    }
+
+    footer ul li {
+        margin-right: 3rem;
+    }
+.bottomlogo img {
+    width: 15%;
+}
+
+}

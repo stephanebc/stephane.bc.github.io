@@ -1,0 +1,203 @@
+.jumbotron {
+    background: #F7F7F7;
+    text-align: center;
+    padding: 3rem 1.3rem;
+}
+
+.ptitle {
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.psubtitle {
+    margin-bottom: 1rem;
+}
+
+.col {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 100%;
+    @include box-shadow;
+}
+
+.col-bottom {
+    margin-bottom: 2rem;
+}
+
+.cardimg img {
+    width: 100%;
+    height: 40vw;
+    object-fit: cover;
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+.card-body {
+    display: flex;
+    justify-content: space-between;
+}
+
+.n-card-body {
+    height: 1rem;
+}
+
+.list-group-numbered {
+    margin: 1rem 0 1.5rem 0;
+}
+
+.list-menu {
+    box-shadow: 1px 1px 10px 1px gray;
+    margin-bottom: 1rem;
+    border-radius: 25px; 
+}
+
+.list-menu:hover .checked {
+    opacity: 1;
+    position: relative;
+    animation: width 1s normal;
+    animation-fill-mode: forwards;
+    z-index: 99999999;
+}
+
+@keyframes width {
+    0% {
+        width: 1rem;
+    }
+
+    100% {
+        width: 5rem;
+    }
+}
+
+.list-menu:hover .checked img {
+    animation: rotate 1s normal
+}
+
+@keyframes rotate {
+    0% {
+        -webkit-transform: rotate3d(0, 0, 1, 0deg);
+        transform: rotate3d(0, 0, 1, 0deg);
+    }
+
+    25% {
+        -webkit-transform: rotate3d(0, 0, 1, 90deg);
+        transform: rotate3d(0, 0, 1, 90deg);
+    }
+
+    50% {
+        -webkit-transform: rotate3d(0, 0, 1, 180deg);
+        transform: rotate3d(0, 0, 1, 180deg);
+    }
+
+    75% {
+        -webkit-transform: rotate3d(0, 0, 1, 270deg);
+        transform: rotate3d(0, 0, 1, 270deg);
+    }
+
+    100% {
+        -webkit-transform: rotate3d(0, 0, 1, 360deg);
+        transform: rotate3d(0, 0, 1, 360deg);
+    }
+}
+
+.menu-name {
+    padding: 1rem 0.5rem;
+    display: flex;
+    width: 20rem;
+}
+
+.list-menu:hover .ms-2 {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+
+.checked  {
+    display: flex;
+    width: 5rem;
+    height: 5rem;
+    background: $tertiary;
+    border: solid 1px $tertiary;
+    border-radius: 0 25px 25px 0;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+}
+
+.checked img {
+    width: 2rem;
+    height: 2rem;
+}
+
+.fw-bold {
+    margin-bottom: 0.5rem;
+}
+
+.badge {
+    color: black;
+    background: white !important;
+    margin-top: 1.5rem;
+}
+
+.starters {
+    animation: opacity 3s normal
+}
+
+.main-courses {
+    animation: opacity 6s normal
+}
+
+.desserts {
+    animation: opacity 9s normal
+}
+
+@keyframes opacity {
+    0% {
+        opacity: 0;
+    }
+
+    25% {
+        opacity: 0.2;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    75% {
+        opacity: 0.8;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .col {
+        width: 50%;
+        margin-top: 3rem;
+    }
+    .n-col-tablet, .col-bottom {
+        margin-top: 1.5rem;
+    }
+}
+
+@media (min-width: 991.99px) {
+    .col {
+        width: 33.33%;
+        margin-top: 3rem;
+        max-height: 41.5rem;
+    }
+}
+
+

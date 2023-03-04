@@ -1,0 +1,11 @@
+.btn {
+    @include button;
+    @include box-shadow; 
+}
+
+.btn:hover {
+    opacity: 0.8;
+    @include button;
+    @include box-shadow;
+    @include box-shadow-hover;
+}

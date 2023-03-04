@@ -1,0 +1,63 @@
+.home-header, .restaurant-header {
+    background: white;
+}
+
+.home-header
+.toplogo {
+        box-shadow: 0px 15px 125px -15px black;
+        margin-bottom: 0.2rem;
+}
+    
+.home-header .toplogo img {
+    margin: 0 auto;
+    width: 40%;
+    padding: 1rem;
+}
+
+.restaurant-header .arrow-logo {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+}
+
+.arrow-logo .toplogo img {
+    position: relative;
+    width: 75%;
+    right: 6.5rem;
+}
+
+.location {
+    background: #EAEAEA;
+    padding: 1rem 0 1rem 0;
+    text-align: center;
+}
+
+.city {
+    font-weight: bold;
+}
+
+.city::before {
+        background-image: url('/images/maps-and-flags.png');
+        background-size: 1rem 1rem;
+        display: inline-block;
+        width: 1rem;
+        height: 1rem;
+        margin-right: 1rem;
+        content: "";
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+.home-header .toplogo img {
+        margin: 0 auto;
+        width: 32.5%;
+        padding: 1rem;
+    }
+}
+
+@media (min-width: 991.99px) {
+.home-header .toplogo img {
+        margin: 0 auto;
+        width: 23.5%;
+        padding: 1rem;
+    }
+}

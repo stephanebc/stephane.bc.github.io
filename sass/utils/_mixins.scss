@@ -1,0 +1,31 @@
+@mixin button {
+    background: $primary;
+    border-radius: 1rem;
+    color: white;
+    display: block;
+    margin: 0 auto 0 auto;
+    width: fit-content;
+}
+
+@mixin box-shadow {
+    box-shadow: 0px 15px 10px -15px gray;    
+}
+
+@mixin box-shadow-hover {
+    box-shadow: 0px 25px 15px -15px gray;
+}
+
+@mixin background-image {
+    width: 100%;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    height: 18rem;
+}
+
+@mixin heart {
+        stroke: #000000;
+        stroke-width: 0.5px;
+        stroke-dasharray: 0;
+        stroke-linejoin: round;
+}
