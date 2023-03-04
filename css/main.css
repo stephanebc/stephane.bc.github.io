@@ -60,6 +60,7 @@
   box-shadow: 1px 1px 10px 1px gray;
   margin-bottom: 1rem;
   border-radius: 25px;
+  z-index: 99999998;
 }
 
 .list-menu:hover .checked {
@@ -107,6 +108,7 @@
 
 .list-menu:hover .ms-2 {
   overflow: hidden;
+  white-space: nowrap;
   text-overflow: ellipsis;
 }
 
